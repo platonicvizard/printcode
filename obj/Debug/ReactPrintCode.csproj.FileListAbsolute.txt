@@ -1,0 +1,5 @@
+M:\Projects\PrintCode.Net\PrintCode.Net\reactBase\bin\ReactPrintCode.dll
+M:\Projects\PrintCode.Net\PrintCode.Net\reactBase\bin\ReactPrintCode.pdb
+M:\Projects\PrintCode.Net\PrintCode.Net\reactBase\obj\Debug\ReactPrintCode.csprojResolveAssemblyReference.cache
+M:\Projects\PrintCode.Net\PrintCode.Net\reactBase\obj\Debug\ReactPrintCode.dll
+M:\Projects\PrintCode.Net\PrintCode.Net\reactBase\obj\Debug\ReactPrintCode.pdb

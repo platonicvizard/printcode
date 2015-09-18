@@ -1,0 +1,5 @@
+M:\Projects\PrintCode.Net\PrintCode.Net\PrintCode.Net\bin\PrintCode.Net.dll
+M:\Projects\PrintCode.Net\PrintCode.Net\PrintCode.Net\bin\PrintCode.Net.pdb
+M:\Projects\PrintCode.Net\PrintCode.Net\PrintCode.Net\obj\Debug\PrintCode.Net.csprojResolveAssemblyReference.cache
+M:\Projects\PrintCode.Net\PrintCode.Net\PrintCode.Net\obj\Debug\PrintCode.Net.dll
+M:\Projects\PrintCode.Net\PrintCode.Net\PrintCode.Net\obj\Debug\PrintCode.Net.pdb

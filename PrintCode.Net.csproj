@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{AEC6F693-7439-4EA9-B07C-AF6638BA8BB3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="build\Connection.php" />
+    <Content Include="build\RemoveBlob.php" />
+    <Content Include="config\**\*.*" />
+    <Content Include="docs\**\*.*" />
+    <Content Include="node_modules\jquerymedia\jquery.media.js" />
+    <Content Include="node_modules\jquery\dist\jquery-1.11.3.js" />
+    <Content Include="node_modules\modal\images\modal-dialog-close%402x.png" />
+    <Content Include="node_modules\modal\images\modal-dialog-close.png" />
+    <Content Include="node_modules\modal\src\index.js" />
+    <Content Include="node_modules\picoModal\picoModal.js" />
+    <Content Include="node_modules\xr\xr.js" />
+    <Content Include="src\App.jsx" />
+    <Content Include="src\assets\apple-touch-icon-precomposed.png" />
+    <Content Include="src\assets\bendedCorner.png" />
+    <Content Include="src\assets\browserconfig.xml" />
+    <Content Include="src\assets\crossdomain.xml" />
+    <Content Include="src\assets\download32x32.png" />
+    <Content Include="src\assets\download64x64.png" />
+    <Content Include="src\assets\favicon - OR.ico" />
+    <Content Include="src\assets\favicon.ico" />
+    <Content Include="src\assets\fedexOffice32x32.png" />
+    <Content Include="src\assets\humans.txt" />
+    <Content Include="src\assets\icon_PDF25x32.png" />
+    <Content Include="src\assets\ImagePNG.png" />
+    <Content Include="src\assets\large.png" />
+    <Content Include="src\assets\officedepot32x32.png" />
+    <Content Include="src\assets\README.txt" />
+    <Content Include="src\assets\robots.txt" />
+    <Content Include="src\assets\square.png" />
+    <Content Include="src\assets\testFile.php" />
+    <Content Include="src\assets\tile-wide.png" />
+    <Content Include="src\assets\tile.png" />
+    <Content Include="src\assets\tiny.png" />
+    <Content Include="src\assets\touch-icon-ipad-retina.png" />
+    <Content Include="src\assets\touch-icon-ipad.png" />
+    <Content Include="src\assets\touch-icon-iphone-retina.png" />
+    <Content Include="src\assets\touch-icon-iphone.png" />
+    <Content Include="src\assets\wide.png" />
+    <None Include="src\components\loading.jsx" />
+    <Content Include="src\components\Navbar.jsx" />
+    <Content Include="src\components\NavbarSpec.jsx" />
+    <Content Include="src\images\logo-small.png" />
+    <Content Include="src\images\logo-small%402x.png" />
+    <Content Include="src\images\logo-small-wt.svg" />
+    <Content Include="src\layouts\Default.jsx" />
+    <Content Include="src\pages\404.html" />
+    <Content Include="src\pages\Connection.php" />
+    <Content Include="src\pages\FileItem.php" />
+    <Content Include="src\pages\RemoveBlob.php" />
+    <Content Include="src\pages\GetFile.php" />
+    <Content Include="src\pages\FileUploadSvr.php" />
+    <Content Include="src\pages\Home.jsx" />
+    <Content Include="src\pages\index.html" />
+    <Content Include="src\pages\Privacy.jsx" />
+    <Content Include="src\pages\Terms.jsx" />
+    <Content Include="src\components\app-addtocart.jsx" />
+    <Content Include="src\components\app-cart.jsx" />
+    <Content Include="src\components\app-catalog.jsx" />
+    <Content Include="src\components\app-decrease.jsx" />
+    <Content Include="src\components\app-increase.jsx" />
+    <Content Include="src\components\app-removefromcart.jsx" />
+    <Content Include="src\components\app.jsx" />
+    <Content Include="src\dispatchers\app-dispatcher.jsx" />
+    <Content Include="src\dispatchers\dispatcher.jsx" />
+    <Content Include="src\constants\app-constants.jsx" />
+    <Content Include="src\actions\app-actions.jsx" />
+    <Content Include="src\pages\phpinfo.php" />
+    <Content Include="src\pages\testFile.php" />
+    <Content Include="src\styles\.csscomb.json" />
+    <Content Include="src\styles\.csslintrc" />
+    <Content Include="src\styles\bootstrap.less" />
+    <Content Include="src\styles\jumbotron.less" />
+    <Content Include="src\styles\mixins.less" />
+    <Content Include="src\styles\navbar.less" />
+    <Content Include="src\styles\style.less" />
+    <Content Include="src\styles\utilities.less" />
+    <Content Include="src\styles\variables.less" />
+    <Content Include=".editorconfig" />
+    <Content Include=".jshintrc" />
+    <Content Include="gulpfile.js" />
+    <Content Include="package.json" />
+    <Content Include="README.txt" />
+    <Content Include="src\WindowsAzure\Blob\BlobRestProxy.php" />
+    <Content Include="src\WindowsAzure\Blob\Internal\IBlob.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\AccessCondition.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\AccessPolicy.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\AcquireLeaseOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\AcquireLeaseResult.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\Blob.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\BlobBlockType.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\BlobPrefix.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\BlobProperties.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\BlobServiceOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\BlobType.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\Block.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\BlockList.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\BreakLeaseResult.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\CommitBlobBlocksOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\Container.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\ContainerACL.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\ContainerProperties.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\CopyBlobOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\CopyBlobResult.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\CreateBlobBlockOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\CreateBlobOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\CreateBlobPagesOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\CreateBlobPagesResult.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\CreateBlobSnapshotOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\CreateBlobSnapshotResult.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\CreateContainerOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\DeleteBlobOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\DeleteContainerOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\GetBlobMetadataOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\GetBlobMetadataResult.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\GetBlobOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\GetBlobPropertiesOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\GetBlobPropertiesResult.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\GetBlobResult.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\GetContainerACLResult.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\GetContainerPropertiesResult.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\LeaseMode.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\ListBlobBlocksOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\ListBlobBlocksResult.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\ListBlobsOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\ListBlobsResult.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\ListContainersOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\ListContainersResult.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\ListPageBlobRangesOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\ListPageBlobRangesResult.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\PageRange.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\PageWriteOption.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\PublicAccessType.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\SetBlobMetadataOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\SetBlobMetadataResult.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\SetBlobPropertiesOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\SetBlobPropertiesResult.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\SetContainerMetadataOptions.php" />
+    <Content Include="src\WindowsAzure\Blob\Models\SignedIdentifier.php" />
+    <Content Include="src\WindowsAzure\Common\CloudConfigurationManager.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Atom\AtomBase.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Atom\AtomLink.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Atom\Category.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Atom\Content.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Atom\Entry.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Atom\Feed.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Atom\Generator.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Atom\Person.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Atom\Source.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Authentication\IAuthScheme.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Authentication\OAuthScheme.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Authentication\SharedKeyAuthScheme.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Authentication\StorageAuthScheme.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Authentication\TableSharedKeyLiteAuthScheme.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\ConnectionStringParser.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\ConnectionStringSource.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\FilterableService.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Filters\AuthenticationFilter.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Filters\DateFilter.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Filters\ExponentialRetryPolicy.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Filters\HeadersFilter.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Filters\RetryPolicy.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Filters\RetryPolicyFilter.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Filters\WrapFilter.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Http\BatchRequest.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Http\BatchResponse.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Http\HttpCallContext.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Http\HttpClient.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Http\IHttpClient.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Http\IUrl.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Http\Url.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\InvalidArgumentTypeException.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\IServiceFilter.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Logger.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\MediaServicesSettings.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\OAuthRestProxy.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Resources.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\RestProxy.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Serialization\ISerializer.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Serialization\JsonSerializer.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Serialization\XmlSerializer.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\ServiceBusSettings.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\ServiceManagementSettings.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\ServiceRestProxy.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\ServiceSettings.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\StorageServiceSettings.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Utilities.php" />
+    <Content Include="src\WindowsAzure\Common\Internal\Validate.php" />
+    <Content Include="src\WindowsAzure\Common\Models\GetServicePropertiesResult.php" />
+    <Content Include="src\WindowsAzure\Common\Models\Logging.php" />
+    <Content Include="src\WindowsAzure\Common\Models\Metrics.php" />
+    <Content Include="src\WindowsAzure\Common\Models\OAuthAccessToken.php" />
+    <Content Include="src\WindowsAzure\Common\Models\RetentionPolicy.php" />
+    <Content Include="src\WindowsAzure\Common\Models\ServiceProperties.php" />
+    <Content Include="src\WindowsAzure\Common\ServiceException.php" />
+    <Content Include="src\WindowsAzure\Common\ServicesBuilder.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Internal\ContentPropertiesSerializer.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Internal\IMediaServices.php" />
+    <Content Include="src\WindowsAzure\MediaServices\MediaServicesRestProxy.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\AccessPolicy.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\Asset.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\AssetFile.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\ContentKey.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\ContentKeyTypes.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\EncryptionSchemes.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\ErrorDetail.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\IngestManifest.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\IngestManifestAsset.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\IngestManifestFile.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\IngestManifestStatistics.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\Job.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\JobTemplate.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\Locator.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\MediaProcessor.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\ProtectionKeyTypes.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\StorageAccount.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\Task.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\TaskHistoricalEvent.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\TaskOptions.php" />
+    <Content Include="src\WindowsAzure\MediaServices\Models\TaskTemplate.php" />
+    <Content Include="src\WindowsAzure\Queue\Internal\IQueue.php" />
+    <Content Include="src\WindowsAzure\Queue\Models\CreateMessageOptions.php" />
+    <Content Include="src\WindowsAzure\Queue\Models\CreateQueueOptions.php" />
+    <Content Include="src\WindowsAzure\Queue\Models\GetQueueMetadataResult.php" />
+    <Content Include="src\WindowsAzure\Queue\Models\ListMessagesOptions.php" />
+    <Content Include="src\WindowsAzure\Queue\Models\ListMessagesResult.php" />
+    <Content Include="src\WindowsAzure\Queue\Models\ListQueuesOptions.php" />
+    <Content Include="src\WindowsAzure\Queue\Models\ListQueuesResult.php" />
+    <Content Include="src\WindowsAzure\Queue\Models\PeekMessagesOptions.php" />
+    <Content Include="src\WindowsAzure\Queue\Models\PeekMessagesResult.php" />
+    <Content Include="src\WindowsAzure\Queue\Models\Queue.php" />
+    <Content Include="src\WindowsAzure\Queue\Models\QueueMessage.php" />
+    <Content Include="src\WindowsAzure\Queue\Models\QueueServiceOptions.php" />
+    <Content Include="src\WindowsAzure\Queue\Models\UpdateMessageResult.php" />
+    <Content Include="src\WindowsAzure\Queue\Models\WindowsAzureQueueMessage.php" />
+    <Content Include="src\WindowsAzure\Queue\QueueRestProxy.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Internal\Action.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Internal\ActiveToken.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Internal\Filter.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Internal\IServiceBus.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Internal\IWrap.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Internal\WrapAccessTokenResult.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Internal\WrapRestProxy.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Internal\WrapTokenManager.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\BrokeredMessage.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\BrokerProperties.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\CorrelationFilter.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\EmptyRuleAction.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\FalseFilter.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\ListOptions.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\ListQueuesOptions.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\ListQueuesResult.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\ListRulesOptions.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\ListRulesResult.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\ListSubscriptionsOptions.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\ListSubscriptionsResult.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\ListTopicsOptions.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\ListTopicsResult.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\QueueDescription.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\QueueInfo.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\ReceiveMessageOptions.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\ReceiveMode.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\RuleDescription.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\RuleInfo.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\SqlFilter.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\SqlRuleAction.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\SubscriptionDescription.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\SubscriptionInfo.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\TopicDescription.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\TopicInfo.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\Models\TrueFilter.php" />
+    <Content Include="src\WindowsAzure\ServiceBus\ServiceBusRestProxy.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Internal\IServiceManagement.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Internal\Service.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Internal\WindowsAzureService.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\AffinityGroup.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\AsynchronousOperationResult.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\ChangeDeploymentConfigurationOptions.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\CreateAffinityGroupOptions.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\CreateDeploymentOptions.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\CreateServiceOptions.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\Deployment.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\DeploymentSlot.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\DeploymentStatus.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\GetAffinityGroupPropertiesResult.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\GetDeploymentOptions.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\GetDeploymentResult.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\GetHostedServicePropertiesOptions.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\GetHostedServicePropertiesResult.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\GetOperationStatusResult.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\GetStorageServiceKeysResult.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\GetStorageServicePropertiesResult.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\HostedService.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\InputEndpoint.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\KeyType.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\ListAffinityGroupsResult.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\ListHostedServicesResult.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\ListLocationsResult.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\ListStorageServicesResult.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\Location.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\Mode.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\OperationStatus.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\Role.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\RoleInstance.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\StorageService.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\UpdateServiceOptions.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\UpgradeDeploymentOptions.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\Models\UpgradeStatus.php" />
+    <Content Include="src\WindowsAzure\ServiceManagement\ServiceManagementRestProxy.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\AcquireCurrentState.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\ChannelNotAvailableException.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\ChunkedGoalStateDeserializer.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\CurrentState.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\CurrentStatus.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\FileInputChannel.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\FileOutputChannel.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\GoalState.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\ICurrentStateSerializer.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\IGoalStateDeserializer.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\IInputChannel.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\IOutputChannel.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\IRoleEnvironmentChange.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\IRoleEnvironmentDataDeserializer.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\IRuntimeClient.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\IRuntimeClientFactory.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\IRuntimeCurrentStateClient.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\IRuntimeGoalStateClient.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\LocalResource.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\Protocol1RuntimeClient.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\Protocol1RuntimeClientFactory.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\Protocol1RuntimeCurrentStateClient.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\Protocol1RuntimeGoalStateClient.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\ReleaseCurrentState.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\Role.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\RoleEnvironmentConfigurationSettingChange.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\RoleEnvironmentData.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\RoleEnvironmentNotAvailableException.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\RoleEnvironmentTopologyChange.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\RoleInstance.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\RoleInstanceEndpoint.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\RoleInstanceStatus.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\RuntimeKernel.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\RuntimeVersionManager.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\RuntimeVersionProtocolClient.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\XmlCurrentStateSerializer.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\XmlGoalStateDeserializer.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\Internal\XmlRoleEnvironmentDataDeserializer.php" />
+    <Content Include="src\WindowsAzure\ServiceRuntime\RoleEnvironment.php" />
+    <Content Include="src\WindowsAzure\Table\Internal\AtomReaderWriter.php" />
+    <Content Include="src\WindowsAzure\Table\Internal\IAtomReaderWriter.php" />
+    <Content Include="src\WindowsAzure\Table\Internal\IMimeReaderWriter.php" />
+    <Content Include="src\WindowsAzure\Table\Internal\ITable.php" />
+    <Content Include="src\WindowsAzure\Table\Internal\MimeReaderWriter.php" />
+    <Content Include="src\WindowsAzure\Table\Models\BatchError.php" />
+    <Content Include="src\WindowsAzure\Table\Models\BatchOperation.php" />
+    <Content Include="src\WindowsAzure\Table\Models\BatchOperationParameterName.php" />
+    <Content Include="src\WindowsAzure\Table\Models\BatchOperations.php" />
+    <Content Include="src\WindowsAzure\Table\Models\BatchOperationType.php" />
+    <Content Include="src\WindowsAzure\Table\Models\BatchResult.php" />
+    <Content Include="src\WindowsAzure\Table\Models\DeleteEntityOptions.php" />
+    <Content Include="src\WindowsAzure\Table\Models\EdmType.php" />
+    <Content Include="src\WindowsAzure\Table\Models\Entity.php" />
+    <Content Include="src\WindowsAzure\Table\Models\Filters\BinaryFilter.php" />
+    <Content Include="src\WindowsAzure\Table\Models\Filters\ConstantFilter.php" />
+    <Content Include="src\WindowsAzure\Table\Models\Filters\Filter.php" />
+    <Content Include="src\WindowsAzure\Table\Models\Filters\PropertyNameFilter.php" />
+    <Content Include="src\WindowsAzure\Table\Models\Filters\QueryStringFilter.php" />
+    <Content Include="src\WindowsAzure\Table\Models\Filters\UnaryFilter.php" />
+    <Content Include="src\WindowsAzure\Table\Models\GetEntityResult.php" />
+    <Content Include="src\WindowsAzure\Table\Models\GetTableResult.php" />
+    <Content Include="src\WindowsAzure\Table\Models\InsertEntityResult.php" />
+    <Content Include="src\WindowsAzure\Table\Models\Property.php" />
+    <Content Include="src\WindowsAzure\Table\Models\Query.php" />
+    <Content Include="src\WindowsAzure\Table\Models\QueryEntitiesOptions.php" />
+    <Content Include="src\WindowsAzure\Table\Models\QueryEntitiesResult.php" />
+    <Content Include="src\WindowsAzure\Table\Models\QueryTablesOptions.php" />
+    <Content Include="src\WindowsAzure\Table\Models\QueryTablesResult.php" />
+    <Content Include="src\WindowsAzure\Table\Models\TableServiceOptions.php" />
+    <Content Include="src\WindowsAzure\Table\Models\UpdateEntityResult.php" />
+    <Content Include="src\WindowsAzure\Table\TableRestProxy.php" />
+    <Content Include="src\WindowsAzure\WindowsAzure.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="build\images\" />
+    <Folder Include="test\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\pages\FileList.jsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\pages\Files.jsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\pages\FileView.jsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\pages\CreateLogin.jsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="node_modules\picoModal\LICENSE.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\components\Modal.jsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="node_modules\modal\css\ReactModalDialog.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\stores\app-store.jsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\.htaccess" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\pages\tools.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\components\download-modal.jsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\pages\GetMime.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\pages\php.ini" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>PrintCode.Net</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53910</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53910/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

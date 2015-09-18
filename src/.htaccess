@@ -1,0 +1,3 @@
+# ---- Make pages render without their extension in the url
+Options +MultiViews
+SetEnv StorageConnectionString "DefaultEndpointsProtocol=http;AccountName=acctname;AccountKey=acckey"
